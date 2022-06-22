@@ -14,6 +14,12 @@ main{
         display: flex;
         align-items: center;
         padding: 3rem;
+
+        &:hover>*{
+            cursor: pointer;
+            color: var(--color-highlight);
+            fill: var(--color-highlight);
+        }
     }
 
     &__items-main{
@@ -37,7 +43,7 @@ main{
 .content-main{
     background-color: var(--color-light-gray-2);
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: minmax(60rem,65%) minmax(33rem, 35%);
     font-size: 1.8rem;
     line-height: 1.5;
 }
@@ -45,6 +51,7 @@ main{
 .projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3.5rem;
     gap: 2rem;
     padding: 2rem;
 
@@ -60,6 +67,7 @@ main{
     font-size: 1.6rem;
     line-height: 1.4;
     padding: 2rem;
+    padding-left: 0;
 }
 
 .announcements{
@@ -96,15 +104,35 @@ main{
     border-radius: 10px;
     &__account{
         display: flex;
+        justify-content: space-between;
         align-items: center;
 
         &:not(:last-child){
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
     }
+
+    &__account-handle{
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+
+    &__account-details{
+        flex-basis: 50rem;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
     &__account-img{
-        width: 6rem;
-        border-radius: 50%;
+        display: inline-block;
+        width: 60px !important;
+        height: 60px !important;
+        line-height: 60px;
+        border-radius: 10000px;
         margin-right: 2rem;
+        box-shadow: 0 0 1px var(--color-dark);
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 3px;
     }
 }

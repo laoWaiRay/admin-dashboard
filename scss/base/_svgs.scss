@@ -3,6 +3,11 @@ svg{
     height: 2.5rem;
     margin-right: 1rem;
     fill: white;
+
+    &:hover{
+        cursor: pointer;
+        fill: var(--color-highlight) !important;
+    }
 }
 
 .svg-dashboard{
@@ -20,6 +25,11 @@ svg{
 .svg-bell{
     width: 3rem;
     height: 3rem;
+
+    &:hover{
+        cursor: pointer;
+        fill: var(--color-highlight);
+    }
 }
 
 .svg-star,

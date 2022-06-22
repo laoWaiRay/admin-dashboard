@@ -39,8 +39,10 @@
         width: 6rem;
         border-radius: 50%;
         margin-right: 2rem;
+        box-shadow: 0 0 1px var(--color-dark);
     }
     &__name{
+        font-weight: 700;
         margin-right: 2rem;
     }
 }
@@ -54,6 +56,10 @@
         width: 8rem;
         border-radius: 50%;
         margin-right: 2rem;
+        box-shadow: 0 0 1px var(--color-dark);
+    }
+    &__message--bottom{
+        font-weight: 700;
     }
 }
 

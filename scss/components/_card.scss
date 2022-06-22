@@ -3,11 +3,12 @@
     flex-direction: column;
     width: 100%;
     padding: 2rem;
-    border: 1px solid var(--color-light-gray);
     border-left: 12px solid var(--color-highlight);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgb(17, 25, 43, 0.1);
     background-color: var(--color-light);
+    transition: transform 300ms ease-in-out, box-shadow 300ms;
+
     &__heading{
         margin-bottom: 1rem;
     }
@@ -18,4 +19,24 @@
         margin-left: auto;
         margin-top: auto;
     }
+
+    &:hover{
+        cursor: pointer;
+        background-color: #355d8f;
+        color: var(--color-light);
+        fill: white;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 10px rgb(17, 25, 43, 0.5);
+    }
+
+    &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 5px 5px rgb(17, 25, 43, 0.5);
+    }
+}
+
+.card:hover .card__heading,
+.card:hover .card__icon{
+    color: var(--color-light);
+    fill: var(--color-light);
 }
