@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+        <section class="sidebar">
+            <div class="sidebar__logo">
+                <img class="svg-dashboard" src="svg/dashboard.svg" alt="">
+                <h1 class="heading-primary">Dashboard</h1>
+            </div>
+            <ul class="sidebar__items-main">
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-home"></use></svg>
+                    <a href="#" class="sidebar__link">Home</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-user-circle"></use></svg>
+                    <a href="#" class="sidebar__link">Profile</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-message"></use></svg>
+                    <a href="#" class="sidebar__link">Messages</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-history"></use></svg>
+                    <a href="#" class="sidebar__link">History</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-task"></use></svg>
+                    <a href="#" class="sidebar__link">Tasks</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-group"></use></svg>
+                    <a href="#" class="sidebar__link">Communities</a>
+                </li>
+            </ul>
+
+            <ul class="sidebar__items-secondary">
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-cog"></use></svg>
+                    <a href="#" class="sidebar__link">Settings</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-help"></use></svg>
+                    <a href="#" class="sidebar__link">Support</a>
+                </li>
+                <li class="sidebar__item">
+                    <svg><use href="sprite.svg#icon-shield"></use></svg>
+                    <a href="#" class="sidebar__link">Privacy</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <header class="header">
+                <div class="search"></div>
+
+                <div class="user-info">
+                    <img src="" alt="" class="user-info__notification-icon">
+                    <img src="" alt="" class="user-info__img">
+                    <span class="user-info__name">Morgan Oakley</span>
+                </div>
+
+                <div class="user-greeting">
+                    <img src="#" alt="" class="user-greeting__img">
+                    <div class="user-greeting__message--top">Hi there,</div>
+                    <div class="user-greeting__message--bottom">Morgan Oakley(@morgan)</div>
+                </div>
+
+                <div class="btns">
+                    <a href="#" class="btns__btn">New</a>  
+                    <a href="#" class="btns__btn">Upload</a>  
+                    <a href="#" class="btns__btn">Share</a>  
+                </div>
+            </header>
+            <section class="content-main">
+        
+            </section>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

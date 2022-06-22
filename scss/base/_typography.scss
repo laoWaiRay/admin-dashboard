@@ -1,0 +1,15 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.heading-primary{
+    color: var(--color-light);
+    font-size: 3rem;
+    user-select: none;
+}

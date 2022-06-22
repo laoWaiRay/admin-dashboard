@@ -1,0 +1,35 @@
+main{
+    // padding: 4rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color: var(--color-dark);
+    display: flex;
+    flex-direction: column;
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+    }
+
+    &__items-main{
+        margin-bottom: 2rem;
+    }
+
+    &__item{
+        display: flex;
+        justify-items: flex-start;
+        align-items: center;
+        padding: 1rem 2rem;
+        transition: background-color 100ms;
+
+        &:hover{
+            cursor: pointer;
+            background-color: var(--color-dark-2);
+        }
+    }
+}
