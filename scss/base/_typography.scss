@@ -1,6 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
+    font-weight: 400;
 }
 
 a{
@@ -11,5 +12,18 @@ a{
 .heading-primary{
     color: var(--color-light);
     font-size: 3rem;
+    user-select: none;
+}
+
+.heading-secondary{
+    color: var(--color-dark);
+    font-size: 2.5rem;
+    user-select: none;
+}
+
+
+.heading-tertiary{
+    color: var(--color-dark);
+    font-size: 2rem;
     user-select: none;
 }

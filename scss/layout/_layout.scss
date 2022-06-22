@@ -1,7 +1,7 @@
 main{
     // padding: 4rem;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: minmax(26rem, 20%) 80%;
     min-height: 100vh;
 }
 
@@ -31,5 +31,80 @@ main{
             cursor: pointer;
             background-color: var(--color-dark-2);
         }
+    }
+}
+
+.content-main{
+    background-color: var(--color-light-gray-2);
+    display: grid;
+    grid-template-columns: 65% 35%;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+
+    &__heading{
+        grid-column: 1/-1;
+    }
+}
+
+.content-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    padding: 2rem;
+}
+
+.announcements{
+    background-color: var(--color-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.announcements-heading{
+    margin-bottom: 1rem;
+}
+
+.announcement{
+    
+    &:not(:last-child){
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-light-gray);
+    }
+
+    &:not(:first-child){
+        padding-top: 1rem;
+    }
+}
+
+.trending-heading{
+    margin: 1rem 0;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light);
+    padding: 2rem;
+    border-radius: 10px;
+    &__account{
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+    &__account-img{
+        width: 6rem;
+        border-radius: 50%;
+        margin-right: 2rem;
     }
 }

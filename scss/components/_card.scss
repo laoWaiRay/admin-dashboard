@@ -1,0 +1,21 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid var(--color-light-gray);
+    border-left: 12px solid var(--color-highlight);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(17, 25, 43, 0.1);
+    background-color: var(--color-light);
+    &__heading{
+        margin-bottom: 1rem;
+    }
+    &__body{
+        margin-bottom: 1rem;
+    }
+    &__icons{
+        margin-left: auto;
+        margin-top: auto;
+    }
+}
