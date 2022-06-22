@@ -7,6 +7,14 @@
 
 html{
     font-size: 62.5%;
+
+    @media only screen and (max-width: 1450px){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: 1000px){
+        font-size: 40%;
+    }
 }
 
 body{

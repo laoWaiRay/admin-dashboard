@@ -19,6 +19,16 @@
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 1450px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 40%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -150,7 +160,7 @@ a {
 
 .header {
   display: grid;
-  grid-template-columns: 60% minmax(40rem, 40%);
+  grid-template-columns: minmax(55rem, 60%) minmax(40rem, 40%);
   grid-template-rows: repeat(2, 1fr);
   padding: 1rem 2rem;
   box-shadow: 0 8px 10px -10px var(--color-light-gray);
